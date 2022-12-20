@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Microbe&display=swap');
 
 html {
-  background: url('../assets/background.png') no-repeat center center fixed;
+  background: url('../assets/orange-cute-cartoon.png') no-repeat center center fixed;
   box-sizing: border-box;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -13,6 +13,7 @@ html {
 body {
   color: yellow;
   font-family: 'Rubik Microbe', sans-serif;
+  font-style: italic;
   display: flex;
   justify-content: center;
   height: 100vh;
@@ -20,14 +21,25 @@ body {
 }
 
 main {
-  background-color: #000;
-  padding: 40px;
+  background-color: rgb(129, 216, 112);
+  padding: 60px;
 }
 
 h1 {
   text-align: center;
   font-size: 40px;
 }
+
+.heading {
+  color: rgb(244, 247, 243);
+}
+
+.header-message {
+  color: blue;
+  text-align: center;
+  font-size: 40px;
+}
+
 
 .game-controls {
   text-align: center;
@@ -37,13 +49,13 @@ h1 {
   display: inline-block;
   height: 38px;
   padding: 0 30px;
-  color: yellow;
+  color: rgb(224, 73, 23);
   text-align: center;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
-  background-color: transparent;
-  border: 1px solid yellow;
+  background-color: rgb(226, 170, 58);
+  border: 1px solid rgb(238, 132, 33);
   cursor: pointer;
 }
 
@@ -68,24 +80,24 @@ h1 {
 
 .pad-red {
   border-top-left-radius: 200px;
-  background-color: red;
+  background-color: rgb(230, 135, 26);
 }
 
 .pad-red:hover,
 .pad-red:focus {
-  background-color: #ff451a;
+  background-color: #da5c3f;
   transform: rotate(-5deg);
 }
 
 .pad-red:active,
 .pad-red.activated {
-  background-color: #ff5c36;
+  background-color: #bd482e;
   transform: translateY(10px);
 }
 
 .pad-green {
   border-top-right-radius: 200px;
-  background-color: green;
+  background-color: rgb(55, 151, 145);
 }
 
 .pad-green:hover,
@@ -102,7 +114,7 @@ h1 {
 
 .pad-yellow {
   border-bottom-right-radius: 200px;
-  background-color: yellow;
+  background-color: rgb(226, 102, 195);
 }
 
 .pad-yellow:hover,
@@ -119,12 +131,12 @@ h1 {
 
 .pad-blue {
   border-bottom-left-radius: 200px;
-  background-color: blue;
+  background-color: rgb(92, 100, 212);
 }
 
 .pad-blue:hover,
 .pad-blue:focus {
-  background-color: #139ddd;
+  background-color: #d54fcf;
   transform: rotate(5deg);
 }
 
@@ -138,6 +150,8 @@ h1 {
   display: none;
 }
 
+
 .unclickable {
   pointer-events: none;
 }
+
